@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://gustavoluc.github.io/ReactApp",
   "description": "conexao com banco de dados",
-  "main": "index.js",
+  "main": "conexao_pg.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,8 @@
     "url": "https://github.com/GustavoLuc/ReactApp.git"
   },
   "author": "Gustavo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.10.0"
+  }
 }
