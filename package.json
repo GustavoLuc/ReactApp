@@ -1,7 +1,8 @@
 {
   "name": "back-end",
   "version": "1.0.0",
-  "description": "conexao com banco de dados ",
+  "homepage": "https://gustavoluc.github.io/ReactApp",
+  "description": "conexao com banco de dados",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
