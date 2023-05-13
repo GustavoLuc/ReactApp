@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+const { Client } = require('pg');
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Configurações de conexão com o banco de dados
+const client = new Client({
+  host: 'kesavan.db.elephantsql.com',
+  port: 5432,
+  user: 'wtplkmpo',
+  password: '8KmQjeYVOWVrU9iQ0mka5-iLC2p-7MKR ',
+  database: 'wtplkmpo'
+});
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Estabelece a conexão
+var resposta =  client.connect((error) => {
+  if (error) {
+    console.error('Erro ao conectar ao banco de dados:', error);
+    return;
+  }
+  console.log('Conexão estabelecida com sucesso!');
+
+  // Agora você pode executar consultas ou outras operações no banco de dados aqui
+
+  // Encerra a conexão quando não for mais necessária
+  client.end();
+});
+export default resposta;
