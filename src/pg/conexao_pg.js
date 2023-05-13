@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 
 // Configurações de conexão com o PostgreSQL
-const connectionString = '	postgres://wtplkmpo:8KmQjeYVOWVrU9iQ0mka5-iLC2p-7MKR@kesavan.db.elephantsql.com/wtplkmpo';
+const connectionString = '	';
 const client = new Client({
   connectionString: connectionString
 });
